@@ -13,3 +13,26 @@ cidr block
 how to troubleshoot issues in k8s 
 helm 
 how cicd works
+how authentication happens from cicd to k8s
+types of services and annotations 
+count in terraform 
+how to create k8s cluster in aws(EKS) using python and flask
+remote backend how to store on s3 and azure or anything
+branching startegies 
+if we have 5 braches but we want to deploy only 2-3 branches how to do this ?
+NAT gateway vs internet gateway routing tables 
+how to peer n number of vpc : ans is using transitGW and hub-spoke
+types of ec2 in which case we use what type : like spot vs reserved
+deployment strategies and how to do in k8s : rolling update, recreate, blue-green....
+how to deploy static website using s3 
+
+
+---------linux-------
+how to check ports and listening ports 
+write a script to ping 5 websites in a file 
+how to create systemd service file and their configs and meaning
+cpu load vs cpu utilisation
+osi model and layers
+cat telnet netstat ifconfif top commands 
+check process running how 
+why not able t create a file in linux what are the issues 
