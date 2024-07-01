@@ -1,4 +1,4 @@
 1.--------Resource sharing : how to allocate resources btw multiple development teams
 u have multiple microservices deployed on same k8s cluster. For that create diff namespaces for each microservice.
 but issue comes if any service is taking more memory than needed in that case memory leak issue is there : OOM killed 
-for each namespace we have to set the resource quota limit
+for each namespace we have to set the resource quota limit. so namespace will use only provided RAM and CPU
