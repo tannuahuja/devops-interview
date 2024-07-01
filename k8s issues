@@ -11,3 +11,8 @@ if we do not set resouce limit one pod will get all the memory and cpu in the na
 
 
 2. -------OOM killed issues with pod : crashLoopBackOffError
+
+3.-------Upgrades : kuneadm or EKS
+before that create a detailed manual on explaining how to take backup, release notes, how to upgrade control plane and worker node components
+ for worker nodes : first drain the nodes eans give time to move the pods to another node, once node is empty then make the node unscheduled
+then upgrade the kubelet to the new version and then make the node active again but scheduling.
