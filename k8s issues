@@ -2,9 +2,12 @@
 u have multiple microservices deployed on same k8s cluster. For that create diff namespaces for each microservice.
 but issue comes if any service is taking more memory than needed in that case memory leak issue is there : OOM killed 
 for each namespace we have to set the resource quota limit. so namespace will use only provided RAM and CPU
->>> for this ask for development team to give an idea how much RAM and CPU is needed
+>>> for this ask for development team to give an idea how much RAM and CPU is needed.Do performance benchmarking with the team
 
 Resource quota is set on particular namespace : to prevent memory leak on whole cluster
 Resource limit is set on particular pod : to prevent memory leak on namespace
 
 if we do not set resouce limit one pod will get all the memory and cpu in the namespace and for other it is not available.
+
+
+2. -------OOM killed issues with pod : crashLoopBackOffError
