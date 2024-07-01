@@ -6,3 +6,5 @@ for each namespace we have to set the resource quota limit. so namespace will us
 
 Resource quota is set on particular namespace : to prevent memory leak on whole cluster
 Resource limit is set on particular pod : to prevent memory leak on namespace
+
+if we do not set resouce limit one pod will get all the memory and cpu in the namespace and for other it is not available.
