@@ -11,7 +11,7 @@ daemon set and stateful set
 aws networking 
 cidr block 
 how to troubleshoot issues in k8s 
-helm 
+helm | helm ls | helm upgrade | helm uninstall
 how cicd works
 how authentication happens from cicd to k8s
 types of services and annotations 
