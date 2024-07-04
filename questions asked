@@ -24,7 +24,8 @@ NAT gateway vs internet gateway routing tables
 how to peer n number of vpc : ans is using transitGW and hub-spoke
 types of ec2 in which case we use what type : like spot vs reserved
 deployment strategies and how to do in k8s : rolling update, recreate, blue-green....
-how to deploy static website using s3   
+how to deploy static website using s3
+terraform state locking | state file
 
 
 ---------linux-------
