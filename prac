@@ -8,4 +8,7 @@ taints and tolerations
 node selector 
 Kubernetes handle storage how
 secrets and ConfigMaps
-to troubleshoot deployment : Using kubectl commands to describe, logs, exec into Pods, checking events, examining configuration, and using tools like kube-state-metrics or Prometheus for monitoring.
+to troubleshoot deployment : Using kubectl commands to describe, logs, exec into Pods, 
+checking events, examining configuration, and using tools like kube-state-metrics or Prometheus for monitoring.
+what is role of helm
+rolling updates and rollbacks
