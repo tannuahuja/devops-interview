@@ -30,6 +30,7 @@ How to handle application configuration updates without downtime?
     ensuring zero downtime by gradually replacing old Pods with new ones based on defined update strategies and readiness checks.
 types of probes : readiness, liveness, startup
  multi-tenancy and isolation mechanisms
+manage env variables
 
 
 
