@@ -32,7 +32,17 @@ types of probes : readiness, liveness, startup
  multi-tenancy and isolation mechanisms
 manage env variables
 
-
+How do components like etcd, kube-apiserver, kube-controller-manager, and kube-scheduler work together to ensure fault tolerance and reliability?
+Discuss Kubernetes network plugins (CNI).  CNI plugins such as Calico, Flannel, and Cilium. When would you choose one over the other for Kubernetes networking?
+What role do Services, Endpoints, and Ingress controllers play in Kubernetes networking?
+You have a Kubernetes cluster with multiple nodes running out of resources (CPU/memory). How would you diagnose resource bottlenecks and optimize resource allocation across nodes using Kubernetes tools and metrics?
+Explain Kubernetes PersistentVolumes (PVs) and PersistentVolumeClaims (PVCs). How would you dynamically provision and manage storage for stateful applications running in Kubernetes Pods?
+pod scheduling mechansm
+You are deploying a microservices architecture in Kubernetes. How would you design and implement effective service discovery, communication, and fault tolerance strategies using Kubernetes features like DNS, Labels, and Pod affinity/anti-affinity?
+Kubernetes security best practices
+You need to automate CI/CD pipelines for deploying applications to Kubernetes clusters. Describe the architecture and components you would use, including tools like Jenkins, GitLab CI, Helm charts, and Kubernetes Deployments.
+Discuss Kubernetes monitoring and logging strategies. How would you collect, analyze, and visualize metrics and logs from Kubernetes clusters using tools like Prometheus, Grafana, Fluentd, and Elasticsearch?
+You are tasked with designing a Kubernetes cluster architecture for a global, geo-distributed application deployment. Outline the considerations and Kubernetes features you would leverage to achieve high availability, performance, and data locality across multiple regions.
 
 
 ---------------------------------DOCKER--------------------------------------
