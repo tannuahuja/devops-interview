@@ -31,3 +31,16 @@ How to handle application configuration updates without downtime?
 types of probes : readiness, liveness, startup
  multi-tenancy and isolation mechanisms
 
+
+
+
+---------------------------------DOCKER--------------------------------------
+docker container vs image
+Docker layers and their significance
+How do you share data between Docker containers
+docker volumes
+docker compose 
+Docker build vs Docker run
+networking models : bridge, host, overlay, and MACVLAN
+container orchestration
+manage docker secrets
