@@ -26,7 +26,7 @@ types of ec2 in which case we use what type : like spot vs reserved
 deployment strategies and how to do in k8s : rolling update, recreate, blue-green....
 how to deploy static website using s3
 terraform state locking | state file
-
+how to perfrom rollout update 
 
 ---------linux-------
 how to check ports and listening ports 
