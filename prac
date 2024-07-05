@@ -16,4 +16,5 @@ rolling updates and rollbacks
 Kubernetes Cluster Autoscaler.
 how k8s manage secrets
 Horizontal Pod Autoscaler (HPA)
-
+Init Containers 
+process of upgrading Kubernetes clusters
