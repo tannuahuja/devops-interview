@@ -7,3 +7,5 @@ What are Labels and Selectors in Kubernetes?
 taints and tolerations
 node selector 
 Kubernetes handle storage how
+secrets and ConfigMaps
+to troubleshoot deployment : Using kubectl commands to describe, logs, exec into Pods, checking events, examining configuration, and using tools like kube-state-metrics or Prometheus for monitoring.
