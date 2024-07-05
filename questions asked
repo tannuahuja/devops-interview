@@ -26,7 +26,8 @@ types of ec2 in which case we use what type : like spot vs reserved
 deployment strategies and how to do in k8s : rolling update, recreate, blue-green....
 how to deploy static website using s3
 terraform state locking | state file
-how to perfrom rollout update 
+
+how to perform rollout and rolling update 
 what is ingress and egress and why it is used
 kubernetes architecture
 k8s services
