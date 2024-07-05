@@ -18,3 +18,6 @@ how k8s manage secrets
 Horizontal Pod Autoscaler (HPA)
 Init Containers 
 process of upgrading Kubernetes clusters
+Deployment VS StatefulSet 
+Pod affinity and anti-affinity
+how k8s handle container resource limits and requests
