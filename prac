@@ -4,4 +4,6 @@ diff btw pods vs development vs namespace
 How does Kubernetes achieve high availability?
 Kubernetes networking models
 What are Labels and Selectors in Kubernetes?
-taints and toleratiions 
+taints and tolerations
+node selector 
+Kubernetes handle storage how
