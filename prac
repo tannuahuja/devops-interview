@@ -54,4 +54,16 @@ Docker container lifecycle management
 docker health checks and importance
 Docker multi-stage build
 How do you secure Docker containers in a production environment
+containerisation vs virtualisation
+handle networking between containers on the same host and across different hosts?
+Docker storage drivers. What are they, and how do they impact container performance and storage management?
+Docker layer caching and how it influences Docker image builds. What strategies can you use to optimize Docker image builds for caching efficiency?
+You have a Docker container running a microservice application that frequently crashes due to memory issues. How would you diagnose and troubleshoot this issue using Docker tools and commands?
+What are Docker security best practices? How would you secure Docker containers and the Docker daemon in a production environment?
+You are tasked with designing a highly available and fault-tolerant Docker container deployment architecture. Outline the components and considerations you would include in this architecture.
+ Docker overlay networks. How do overlay networks facilitate container communication across multiple Docker hosts in a cluster?
+manage docker secrets, sensitive information and API
+Docker volumes plugins
+You encounter a scenario where a Docker container fails to start due to a networking issue. Describe the steps you would take to diagnose and resolve the problem, considering container networking modes and Docker networking tools.
+
 
