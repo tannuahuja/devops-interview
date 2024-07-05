@@ -1,3 +1,4 @@
+-----------------------------KUBERNETES-----------------
 what problem k8s solved
 architecture
 diff btw pods vs development vs namespace
@@ -12,3 +13,7 @@ to troubleshoot deployment : Using kubectl commands to describe, logs, exec into
 checking events, examining configuration, and using tools like kube-state-metrics or Prometheus for monitoring.
 what is role of helm
 rolling updates and rollbacks
+Kubernetes Cluster Autoscaler.
+how k8s manage secrets
+Horizontal Pod Autoscaler (HPA)
+
