@@ -79,3 +79,45 @@ You encounter a scenario where a Docker container fails to start due to a networ
 
 
 --------------------------TERRAFORM---------------------
+pirpose of terraform
+how is terraform different from Ansible, Chef, Puppet
+terraform workflow
+why terraform state is impt
+How does Terraform handle dependencies between resources
+variable : string, number, bool, list, map, and object.
+usage of : interpolation syntax (${}) 
+How does Terraform manage sensitive data like passwords or API keys
+How do you configure multiple providers in a single configuration?
+How do you manage Terraform state? What are remote backends, and why would you use them
+What are Terraform data sources, and how are they used? 
+Describe Terraform locals and their purpose. When would you use locals in your Terraform configuration?
+How do you use outputs to retrieve information from Terraform resources?
+workspace. When would you use multiple workspaces in a Terraform project?
+lifecycle hooks (create_before_destroy, ignore_changes). When and how would you use them?
+Terraform's plan and apply process. What does each step involve, and why are they important?
+state locking. Why is it important in a collaborative environment?
+graph and how it relates to resource dependencies and execution order.
+How do you integrate Terraform with version control systems (like Git) and CI/CD pipelines?
+remote backend (s3, azure blob storage, gcp cloud )
+how to manage sensitive data, secrets in diff environment : prod, dev, staging
+Discuss strategies for handling Terraform state file management in a team environment.
+error handling and troubleshooting strategies
+What are Terraform modules registries (like Terraform Registry, Nexus, Artifactory)? How do they facilitate module sharing and reuse?
+terraform use case
+How would you extend Terraform functionality using plugins or custom providers?
+Terraform vs  AWS CloudFormation or Azure Resource Manager (ARM) templates?
+Terraform CDK (Cloud Development Kit)
+limitations or challenges of using Terraform
+handle Terraform upgrades and changes to provider APIs in a production environment?
+
+
+Explain the Terraform plan execution phase. How does Terraform determine the execution plan, and what factors influence it?
+Terraform state locking mechanisms. How does Terraform handle concurrent operations and ensure state consistency across team members?
+lifecycle management
+how Terraform handles resource dependencies and ensures proper order of resource creation and deletion using implicit and explicit dependencies.
+count and for_each
+ignore_changes when and why to use this 
+use Terraform to provision resources across multiple cloud providers (e.g., AWS, Azure, Google Cloud) within the same configuration
+migrate existing Terraform state from local storage to a remote backend. What precautions and steps would you take to ensure a smooth transition?
+How does Terraform handle state encryption and security? What are best practices for securing sensitive data stored in Terraform state files?
+
