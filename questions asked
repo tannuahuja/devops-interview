@@ -31,6 +31,7 @@ how to perform rollout and rolling update
 what is ingress and egress and why it is used
 kubernetes architecture
 k8s services
+docker volume and docker network
 
 ---------linux-------
 how to check ports and listening ports 
