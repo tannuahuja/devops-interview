@@ -27,6 +27,8 @@ deployment strategies and how to do in k8s : rolling update, recreate, blue-gree
 how to deploy static website using s3
 terraform state locking | state file
 how to perfrom rollout update 
+what is ingress and egress and why it is used
+
 
 ---------linux-------
 how to check ports and listening ports 
