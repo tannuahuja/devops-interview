@@ -21,7 +21,7 @@ process of upgrading Kubernetes clusters
 Deployment VS StatefulSet 
 Pod affinity and anti-affinity
 how k8s handle container resource limits and requests
-role of kube-proxy
+role of kube-proxy, kubelet....
 daemonset vs stateful set 
 How does Kubernetes handle node failure and rescheduling of Pods
 job vs cron job in k8s
