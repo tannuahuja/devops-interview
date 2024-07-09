@@ -33,15 +33,31 @@ kubernetes architecture
 k8s services
 statefulset and daemon set
 docker volume and docker network
+create 10 buckets in aws using terraform 
+10 buckets of different types how to create in terraform
+role of state file 
+k8s yaml file follows declarative or imperative approach
+
 
 ---------linux-------
+10 basic commands u use in day to day work
 how to check ports and listening ports 
 write a script to ping 5 websites in a file 
 how to create systemd service file and their configs and meaning
 cpu load vs cpu utilisation
 osi model and layers
-cat telnet netstat ifconfif top commands 
+cat telnet netstat ifconfig top commands 
 check process running how 
 why not able t create a file in linux what are the issues 
 check running processes in linux
 file permissions
+
+--------------------------------
+
+how to integrate aws with gitlab
+how to secure gitlab 
+how to integrate a project and do CICD in gitlab
+how to start and create a repo 
+how terraform knows that we have to integrate aws infra
+where we store access key and secret key in aws while using terraform 
+how to integrate cicd pipeline with terraform 
