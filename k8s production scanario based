@@ -108,3 +108,5 @@ Tools:
 Container Image Scanning: Tools like Clair, Trivy, or integrated scanning services to detect vulnerabilities.
 Pod Security Policies: Kubernetes resource to enforce security policies on pods.
 Runtime Protection: Implement tools for runtime monitoring and protection (e.g., Falco, Aqua Security).
+
+RBAC (Role-Based Access Control) in Kubernetes enables administrators to manage access permissions by defining roles (for specific namespaces) and cluster roles (for the entire cluster). These roles specify what actions (verbs) users or service accounts (subjects) can perform on Kubernetes resources (like pods or services). RoleBindings and ClusterRoleBindings associate roles with subjects, controlling access across namespaces or the entire cluster, ensuring secure and controlled management of resources based on organizational policies.
