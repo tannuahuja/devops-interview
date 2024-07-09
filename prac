@@ -121,3 +121,41 @@ use Terraform to provision resources across multiple cloud providers (e.g., AWS,
 migrate existing Terraform state from local storage to a remote backend. What precautions and steps would you take to ensure a smooth transition?
 How does Terraform handle state encryption and security? What are best practices for securing sensitive data stored in Terraform state files?
 
+
+----------------JENKINS---------------------
+why we use and need of jenkins
+how jenkins file is used
+Explain the difference between Declarative and Scripted Pipeline syntax in Jenkins.
+what is jenkins pipeline
+How do you trigger a Jenkins build?
+jenkins master slave architecture
+How can Jenkins be integrated with Docker?
+jenkins agents
+How do you manage Jenkins security?
+What is the role of a Jenkins administrator?
+What are Jenkins Slave Nodes and how are they configured?
+What is the purpose of the Jenkinsfile in a Git repository?
+How can Jenkins handle multiple Git repositories in a single job?
+jenkins webhook integration
+configure email notifications in Jenkins?
+integrate slack send notification
+How do you troubleshoot a failed Jenkins build?
+What is the difference between continuous integration, continuous delivery, and continuous deployment?
+How do you handle environment-specific configurations in Jenkins
+How do you manage secrets and credentials in Jenkins?
+What is the role of Groovy in Jenkins?
+How do you implement SSL/TLS in Jenkins?
+What are some best practices for Jenkins job configuration?
+How do you integrate Jenkins with Kubernetes?
+How do you implement Blue-Green Deployment using Jenkins?
+Explain Jenkins integration with cloud services (e.g., AWS, GCP).
+monitor jenkins performance
+What strategies do you use for Jenkins backup and recovery?
+How do you use Jenkins for mobile app development?
+
+
+
+
+
+
+
