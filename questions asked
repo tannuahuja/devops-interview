@@ -46,7 +46,14 @@ what kind of issues we are facing if we are creating a pod but not able to creat
 how to upgrade a k8s cluster
 how we use scheduler in jenkins
 jenkins master slave architecture
+how to do testing in jenkins each time pipeline runs 
+in which langauge we write jenkins script
 types of variables we use in terraform
+how to do sonarqube integration with jenkins 
+what is code coverage in sonarqube
+why we need iac : terraform
+need of containerisation
+
 
 ---------linux-------
 10 basic commands u use in day to day work
