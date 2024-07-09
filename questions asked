@@ -42,6 +42,7 @@ where to mention we need autoscaling and want to create 3 pods in k8s : ans in i
 role of provider block 
 role of terraform init command
 what kind of issues we are facing if we are creating a pod but not able to create : imagePullBackOff, crashLoopBackOff, OOM errors
+how to upgrade a k8s cluster
 
 ---------linux-------
 10 basic commands u use in day to day work
