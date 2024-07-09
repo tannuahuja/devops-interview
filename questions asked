@@ -19,6 +19,7 @@ count in terraform
 how to create k8s cluster in aws(EKS) using python and flask
 remote backend how to store on s3 and azure or anything
 branching startegies 
+k8s components :master and worker components
 if we have 5 braches but we want to deploy only 2-3 branches how to do this ?
 NAT gateway vs internet gateway routing tables 
 how to peer n number of vpc : ans is using transitGW and hub-spoke
@@ -44,7 +45,8 @@ role of terraform init command
 what kind of issues we are facing if we are creating a pod but not able to create : imagePullBackOff, crashLoopBackOff, OOM errors
 how to upgrade a k8s cluster
 how we use scheduler in jenkins
-
+jenkins master slave architecture
+types of variables we use in terraform
 
 ---------linux-------
 10 basic commands u use in day to day work
