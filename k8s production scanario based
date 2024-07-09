@@ -1,0 +1,64 @@
+1.--------Resource sharing : how to allocate resources btw multiple development teams
+u have multiple microservices deployed on same k8s cluster. For that create diff namespaces for each microservice.
+but issue comes if any service is taking more memory than needed in that case memory leak issue is there : OOM killed 
+for each namespace we have to set the resource quota limit. so namespace will use only provided RAM and CPU
+>>> for this ask for development team to give an idea how much RAM and CPU is needed.Do performance benchmarking with the team
+
+Resource quota is set on particular namespace : to prevent memory leak on whole cluster
+Resource limit is set on particular pod : to prevent memory leak on namespace
+
+if we do not set resouce limit one pod will get all the memory and cpu in the namespace and for other it is not available.
+
+
+2. -------OOM killed issues with pod : crashLoopBackOffError
+
+3.-------Upgrades : kubeadm or EKS
+before that create a detailed manual on explaining how to take backup, release notes, how to upgrade control plane and worker node components
+ for worker nodes : first drain the nodes eans give time to move the pods to another node, once node is empty then make the node unscheduled
+then upgrade the kubelet to the new version and then make the node active again but scheduling.
+
+for control plane we upgrade api scheduler and etcd
+
+
+
+---------------------------------------------
+---------------------------------------------
+>>>>>*********----------------your application is facing downtime.how k8s will achieve high availability of applications?
+1. deploy application using deployment or statefulsets depends on applications are stateful or stateless.
+ as statefulsets help to manage the applications  by ensuring each pod has unique identity and persistent storage.
+ ***StatefulSet is a workload API object that manages the deployment and scaling of a set of stateful applications. Unlike Deployments, which are typically used for stateless applications, StatefulSets are designed for applications that require stable and unique network identifiers, stable persistent storage, and ordered deployment and scaling.
+2. use replicaset: to scale no of pods if one goes down other will handle
+3. attach service to load balance traffic across the pods to ensure the traffic are evenly distributed if a pod fail the traffic will redirect to healthy pods.
+4. implement health checks (liveness and readiness probe) so that it will restart pods that are not healthy and send traffic oly to that pods which areready to serve requests
+5. create multiple nodes on diff zones so that if entire zone goes down the application is available and implement HPA varying traffic automatically by scaling number of pods
+based on cpu and memory usage.
+
+PROBE: Probes in Kubernetes are configured within the spec section of a Pod's YAML definition for each container. They help Kubernetes manage container lifecycle, improve application reliability, and ensure smooth operation by allowing fine-grained control over when containers are considered healthy and ready to serve traffic.
+LIVENESS PROBE :determines if a container is running properly. If the liveness probe fails, Kubernetes restarts the container to attempt recovery.
+READINESS:determines if a container is ready to accept traffic. Kubernetes directs traffic only to containers that pass their readiness probes.
+STARTUP: determines if a container is ready to start accepting traffic or is still initializing. It complements the readiness probe by delaying traffic until the application is ready.
+
+TYPES:
+HTTP GET Probe: Checks for a successful HTTP response (200-399 status code) from a specified endpoint on the container.
+TCP Socket Probe: Attempts to open a TCP connection to the container on a specified port.
+Exec Probe: Executes a custom command inside the container and checks the exit status (zero indicates success).
+
+>>>>>******-----------which tools are used so that no downtime : if application is updating or pods are updating
+1. using rolling update strategy : way to update applications smoothly by gradually replacing old versions with new ones, ensuring continuous availability.
+   Kubernetes manages this process by controlling how many instances (pods) of the new version are created and ready before terminating the old ones, ensuring that there are always enough pods running to handle incoming requests without interruption.
+define parameters like maxavailable and maxsurge 
+maxUnavailable in rolling updates helps Kubernetes maintain application availability by controlling how many pods can be unavailable at any given time. It allows operators to balance between speed of deployment and ensuring that there are enough instances of the application running to handle incoming requests without interruption.
+If maxUnavailable=1, Kubernetes will ensure that at least one pod of the old version remains available during the update. This minimizes downtime but slows down the update process.
+If maxUnavailable=25%, Kubernetes will ensure that at least 25% of the pods (rounded up) remain available during the update. This allows for faster updates but might temporarily reduce the availability of the application.
+If maxUnavailable is not specified, Kubernetes uses a default value of 1. This means by default, it will try to maintain at least one pod of the old version available during the update
+
+2. using argoCD and gitops based tools we can do use to do rollouts: tomaintain version and deployment
+
+
+
+>>>>>******------ resource utilisation how k8s make ensure to use resources efficiently.
+1. Resource Requests and Limits: 
+requests make sure that each pod will get guarantee amount of cpu and memory. Requests ensure that nodes have enough resources reserved to schedule pods.
+limits prevent a pod from using more than speified amount of resources. limits define the maximum amount of resources a container or pod can consume.
+2. Horizontal Pod Autoscaling (HPA):
+Kubernetes supports Horizontal Pod Autoscaling, which automatically adjusts the number of replicas of a pod based on metrics such as CPU utilization or custom metrics. This ensures that applications can scale out to handle increased load and scale in during periods of lower demand, optimizing resource usage dynamically.
