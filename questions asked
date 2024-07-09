@@ -37,7 +37,11 @@ create 10 buckets in aws using terraform
 10 buckets of different types how to create in terraform
 role of state file 
 k8s yaml file follows declarative or imperative approach
-
+what is manifests in k8s
+where to mention we need autoscaling and want to create 3 pods in k8s : ans in in pod yaml file 
+role of provider block 
+role of terraform init command
+what kind of issues we are facing if we are creating a pod but not able to create : imagePullBackOff, crashLoopBackOff, OOM errors
 
 ---------linux-------
 10 basic commands u use in day to day work
@@ -57,7 +61,7 @@ file permissions
 how to integrate aws with gitlab
 how to secure gitlab 
 how to integrate a project and do CICD in gitlab
-how to start and create a repo 
+how to start and create a repo from scratch
 how terraform knows that we have to integrate aws infra
 where we store access key and secret key in aws while using terraform 
 how to integrate cicd pipeline with terraform 
