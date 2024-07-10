@@ -77,3 +77,7 @@ how to start and create a repo from scratch
 how terraform knows that we have to integrate aws infra
 where we store access key and secret key in aws while using terraform 
 how to integrate cicd pipeline with terraform 
+
+why we need goldilocks
+need of goldilocks 
+how it is different from aws cloudwatch and other monitoring tools
