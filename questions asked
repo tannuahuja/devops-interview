@@ -53,6 +53,7 @@ how to do sonarqube integration with jenkins
 what is code coverage in sonarqube
 why we need iac : terraform
 need of containerisation
+infra creation with modeules in aws
 
 
 ---------linux-------
