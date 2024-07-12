@@ -1,0 +1,6 @@
+SSH : secured shell is used to create a secure connection from a client(local system) to run a shell on remote system.
+we use computer that is not is front of us throgh a local terminal or console and we need to control a system remotely to make any changes configurations or to install any software 
+
+ssh involves network technologies how IP networking works also knowledge of command line 
+
+ SSH is primarily a network-based technology, and we use it to connect from one system to another. So in order to work with SSH as we learn, we'll need at least two computers connected by a network
