@@ -29,3 +29,18 @@ local.settings.json: local configuration settings of our application, ignored by
 using portal
 using CLI
 using ARM templates: using json files 
+
+------azure function core tools
+help to test, develop, run and debug azure functions on local computer
+
+func
+func init
+func new
+func start
+func start --verbose
+whcih func
+
+----triggers and boundings
+triggers define how a function is executed, functions can have only one trigger
+bindings allows to connect data and services to and from the function, functions can have multiple input or output bindings r not at all
+types of bindings: http, blob storage, service bus queue,cosmo db, event hubs 
