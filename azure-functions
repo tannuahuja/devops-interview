@@ -54,3 +54,31 @@ we can first resize the uploaded photo and after that we can up
 ----- creating and preparing analyzer service projects
 -----creating a startup class and injecting the dependency
 ----Implementing AnalyzerService logic using the Computer Vision cognitive service
+
+
+---deploying az functions 
+from cli: func azure functionapp publish tannufun
+az functionapp deploymet source config-zip
+compress-archieve
+az functionapp deploymet source config-zip --resource-group tannu --src course.zip
+
+from vs code also
+
+----- CICD process for azure functions
+in azure devops create a pipeline
+
+----azure durable functions
+allows to build stateful functions and define orchestrator of other other functions through cove
+it automatically handles states, checkpoints and restarts
+
+---benefits
+stateful workflows
+sync or async execution of functions
+function results can be stored locally
+local data can never be lost
+automatic retries
+parallel execution
+workflow cancellation
+dev tools (we have extension)
+
+----
