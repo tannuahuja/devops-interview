@@ -1,0 +1,26 @@
+they scale dynamically
+on demand scaling
+on demand serverless code completely managed
+supports multiple languages 
+based on triggers and bindings
+
+----benefits
+programming model is simple and flexible
+less code
+less cost
+no need to manage servers
+
+----function app
+a unit of development and deployment, when need to create a function first need to create function app and can have many functions
+designed specifically for hosting and running azure functions
+
+consumption plan: default, pay only when functions are running, scale out automatically acc to workload
+premium: vnet connectivity, unlimited execution duration, premium instance sizes
+   cons: higher prize, 
+dedicated(app service) plan: dedicated vm, resuse ur existing app service
+   cons: no serverless- u have to manage b ur own u are respsnisble for provising and managing computing resource
+
+----architecture
+core file uses : function.json: conf metadata for a particular function, can be edited in portal based functions
+host.json: contains global configuretion option and impact all functions in function app
+local.settings.json: local configuration settings of our application, ignored by git and azure, Iconfiguration
