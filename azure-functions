@@ -82,3 +82,9 @@ workflow cancellation
 dev tools (we have extension)
 
 ----implementing orchestrator
+
+----managing and securing az functions
+authentication and autherization : use keys- function keys, host keys and system keys
+using azure keyvault to store azure function secret: in azure key vault mention function app name
+azure functions proxies:allows u to forward requests to other resources, we have proxies options available in function app
+
