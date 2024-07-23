@@ -4,3 +4,14 @@ we use computer that is not is front of us throgh a local terminal or console an
 ssh involves network technologies how IP networking works also knowledge of command line 
 
  SSH is primarily a network-based technology, and we use it to connect from one system to another. So in order to work with SSH as we learn, we'll need at least two computers connected by a network
+
+
+
+
+##########------------NGINX----------##########
+quickly becoming the leading web server
+efficient and consistent under heavy load
+easy to configure
+
+
+-----apache vs nginx
