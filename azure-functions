@@ -24,3 +24,8 @@ dedicated(app service) plan: dedicated vm, resuse ur existing app service
 core file uses : function.json: conf metadata for a particular function, can be edited in portal based functions
 host.json: contains global configuretion option and impact all functions in function app
 local.settings.json: local configuration settings of our application, ignored by git and azure, Iconfiguration
+
+----creating function app
+using portal
+using CLI
+using ARM templates
