@@ -41,3 +41,37 @@ cd /var/www :
 -----whats inside nginx.conf
 ----how to add files to root directory
 
+##For configuration files stored in the /etc/nginx/conf.d directory, what will be the file extension?
+Standard NGINX configurations use the .conf extension so that they are processed by the include statement in the http directive of /etc/nginx.conf
+##The /etc/nginx directory holds the configuration for the entire NGINX installation. Inside this directory, you’ll find the files that control the way the web server runs along with the files that define the web sites being served.
+##What might happen if a server block does not include the server_name directive when NGINX is serving multiple sites from the same IP address?
+NGINX might serve the wrong content.
+
+##systemctl reload nginx : This command tells NGINX to reload all configuration files from disk. Because NGINX loads its configuration into memory when it first starts, the reload command is needed if any changes are made to the configuration and need to be applied.
+
+## How does NGINX use the default_server directive?
+Because NGINX can serve multiple sites from the same IP address, the default_server statement is used to tell NGINX to use a particular server configuration if no other configurations match the name of the site being requested.
+
+##The command "nginx -t" checks the configuration without stopping or reloading the service. Using this option, we can make changes to the configuration and then test them before reloading it.
+
+##listen 80 : The listen directive is used to tell NGINX which port to listen on for requests to serve. The default port for web servers to listen on is 80.
+## main configuration file : /etc/nginx/nginx.conf is the main configuration file for NGINX. It contains configuration for the main server program and can load other configurations as well.
+##One of the best ways to confirm that NGINX is installed correctly is to open a browser to the server's IP address.
+##The settings used to configure NGINX are called directives.
+
+----- location directive directive used to control sites conf is : location directive
+allows us to extend our configuration, based on URI of request being processed by the server
+location directives are formatted as blocks, also can be nested inside another location blocks
+--location modifiers are also used : = ~ ~* ^~
+
+--location definations : 
+prefix string and regular expressions 
+nginx checks locations with prefix strig first, regular expressions are checked when they apperaed in the configuration
+---locaion processing:
+exact match loaction are identified first then prefix string location  and regular expression location
+
+---configure location
+site root
+images
+error pages
+
