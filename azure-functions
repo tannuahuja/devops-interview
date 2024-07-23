@@ -45,3 +45,12 @@ whcih func
 triggers define how a function is executed, functions can have only one trigger
 bindings allows to connect data and services to and from the function, functions can have multiple input or output bindings r not at all
 types of bindings: http, blob storage, service bus queue,cosmo db, event hubs 
+
+----blob storage photo upload resizing
+we can first resize the uploaded photo and after that we can up
+[Blob(photos-small/{name}), FileAccess.Write, Connection=Literals.SorageConnectionString]  ??
+
+
+----- creating and preparing analyzer service projects
+-----creating a startup class and injecting the dependency
+----Implementing AnalyzerService logic using the Computer Vision cognitive service
