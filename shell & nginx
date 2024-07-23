@@ -39,4 +39,5 @@ cd /var/log/nginx : defualt where nginx stores logs
 cd /var/www : 
 
 -----whats inside nginx.conf
+----how to add files to root directory
 
