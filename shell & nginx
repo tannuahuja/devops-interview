@@ -13,5 +13,21 @@ quickly becoming the leading web server
 efficient and consistent under heavy load
 easy to configure
 
+port 22 is for ssh traffic 
+port 80 for web traffic
+port 443 for encrypted web traffic 
 
 -----apache vs nginx
+
+----nginx cli
+use to check status, stop and start the service, ceck the service configuration
+nginx -v
+nginx -h
+systemctl status nginx
+systemctl reload nginx
+systemctl restart nginx
+systemctl stop nginx
+systemctl status nginx --no-pager
+
+----files and directories
+
