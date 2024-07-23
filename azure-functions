@@ -28,4 +28,4 @@ local.settings.json: local configuration settings of our application, ignored by
 ----creating function app
 using portal
 using CLI
-using ARM templates
+using ARM templates: using json files 
