@@ -30,4 +30,13 @@ systemctl stop nginx
 systemctl status nginx --no-pager
 
 ----files and directories
+cd /etc/nginx
+main conf file: nginx.conf
+               more nginx.conf
+cd /var/log/nginx : defualt where nginx stores logs
+            head access.log
+            head error.logs
+cd /var/www : 
+
+-----whats inside nginx.conf
 
