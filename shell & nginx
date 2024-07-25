@@ -98,5 +98,19 @@ sudo netstat -plan | grep nginx
 * to check logs
 tail -f /var/logs/nginx/*.logs
 
+Location directives are formatted as blocks and are defined inside server blocks. They can also be nested inside other location blocks.
+
+Default logging is configured in the http context and can be overridden in the server and location contexts.
+
+NGINX uses log files to record various operational details like the date, time, and name of a file that was served. These logs are useful for monitoring normal operation and tracking down issues if a problem occurs.
+
+The try_files directive gives NGINX a list of files or directories to look for, relative to the location. The first file or directory that matches gets processed. If no items in the list match, then the last item in the list is used as a URI or an error code.
+
+When NGINX can’t find any content to respond to a request, it displays a 404 error page.
+
+location directive is useful for configuring NGINX to process different requests in ways similar to server blocks without having to create additional servers
+and extending an NGINX configuration based on the URI being processed by the server
+
+A good first step in troubleshooting is to make sure NGINX is running. The systemctl status NGINX command gives output that confirms whether NGINX is running or not
 
 
