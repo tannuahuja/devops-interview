@@ -176,3 +176,6 @@ how to set password for authentication o nginx
 - One of the best ways to create and manage password files is with the “htpasswd” program which is included in the Apache2 Utils package.
 -SSL Certificates help identify websites and help keep the sensitive content secure by encrypting transmissions.
 An SSL certificate is a digital credential that authenticates a website's identity and helps encrypt the connection between a browser and a web server.
+
+
+--------using nginx with docker 
