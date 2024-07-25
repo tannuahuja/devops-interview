@@ -150,3 +150,15 @@ restrict access when possible
 use passwords to protect sensitive info
 use TLS/SSL to identify ur site and encrypt transmissions
 
+-****  allow and deny directives 
+hhtp modue is used to deny and accept 
+cam be used in http, server and location contexts
+specify patterns to match incoming requests
+
+-*** configure password authentication
+auth_basic
+auth_basic_user_file
+
+-** configure HTTPS :
+ssl: secured sockets layer- used to describe certificates and keys
+tls: transport layer security
