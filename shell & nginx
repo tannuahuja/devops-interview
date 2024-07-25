@@ -166,3 +166,4 @@ tls: transport layer security
 -** An SSL (Secure Sockets Layer) certificate is a digital certificate that authenticates the identity of a website and encrypts data transmitted between the browser and the server, ensuring secure connections for users.
 letsencrypt, digicert, entrust, cloud service provider
 how to create ssl certificate on nginx
+how to set password for authentication o nginx
