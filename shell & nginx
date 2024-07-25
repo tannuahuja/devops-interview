@@ -167,3 +167,12 @@ tls: transport layer security
 letsencrypt, digicert, entrust, cloud service provider
 how to create ssl certificate on nginx
 how to set password for authentication o nginx
+
+-NGINX provides the HTTP Access module that includes allow and deny directives. These are used to limit who is allowed to see certain content and who gets denied.
+-Allow and deny directives will be applied in the order they are defined. So it is important to have the deny all come after all of the addresses that are allowed.
+-The openSSL command line tool can be used to create self signed SSL keys and certificates.
+-NGINX provides the HTTP SSL Module for configuring sites for HTTPS. Even though HTTPS now uses TLS (Transport Layer Security) as the method for encrypting traffic, the module is named SSL for the original method of encryption.
+-best location for passowrd : /etc/nginx It's important to not store the password file in a location that can be accessed by anyone browsing a site. This might allow them to access the password file and discover account names and passwords. Since configuration directories are not browsable, /etc/nginx is the best choice.
+- One of the best ways to create and manage password files is with the “htpasswd” program which is included in the Apache2 Utils package.
+-SSL Certificates help identify websites and help keep the sensitive content secure by encrypting transmissions.
+An SSL certificate is a digital credential that authenticates a website's identity and helps encrypt the connection between a browser and a web server.
