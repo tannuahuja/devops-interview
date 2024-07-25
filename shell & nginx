@@ -133,3 +133,10 @@ Session persistence, also known as session affinity or sticky sessions, is a fea
 -- upstream directive
 grp together servers allowing other directive to refrence all of the servers as a single unit 
 used to define a group of servers that can handle requests for a particular location
+
+
+----load balancing methods and directives
+round robin(default), least connections, IP hashing, weight(to give higher preference)
+
+------nginx security
+
