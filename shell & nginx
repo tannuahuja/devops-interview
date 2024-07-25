@@ -114,3 +114,22 @@ and extending an NGINX configuration based on the URI being processed by the ser
 A good first step in troubleshooting is to make sure NGINX is running. The systemctl status NGINX command gives output that confirms whether NGINX is running or not
 
 
+-----reverse proxy
+Reverse Proxy:
+-Nginx sits between clients (like web browsers) and backend servers (like application servers or databases).
+-It receives client requests and forwards them to the appropriate backend server.
+-This helps hide the internal structure of your server and improves security by serving as a barrier.
+Example: Nginx receives requests from clients, forwards them to backend servers, and returns the responses to clients.
+
+Load Balancer:
+-Nginx distributes incoming client requests across multiple backend servers.
+-This improves performance and ensures no single server gets overwhelmed.
+-Nginx can use various load-balancing algorithms (e.g., round-robin, least connections) to distribute the load.
+Example: Nginx balances traffic across multiple web servers to handle high traffic efficiently, improving overall system reliability and performance.
+
+--support session persistence
+Session persistence, also known as session affinity or sticky sessions, is a feature of load balancers that ensures a client's requests are always directed to the same backend server during a session. This is important for applications where maintaining state or context across multiple requests from the same client is necessary.
+
+-- upstream directive
+grp together servers allowing other directive to refrence all of the servers as a single unit 
+used to define a group of servers that can handle requests for a particular location
