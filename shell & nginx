@@ -75,3 +75,28 @@ site root
 images
 error pages
 
+----configure logs
+NGINX uses log files to store various operational details for monitoeing normal operations and tracking down issues if problem occurs.
+
+types: 
+access logs: time of request, result of request, clint IP address, client browser type
+error logs: configuration errors, service stops and start, service errors
+
+---troubleshooting errors:
+* checking configuration errors using : nginx -t identify the error and line number
+
+* if errors are not identified by nginx -t command
+systemctl status nginx
+systemctl reload nginx
+systemctl restart nginx
+
+*checking the ports: standard ports for web traffic to open are 8 and 443
+sudo lsof -i :80 -i :443 | grep nginx   (lsof : list of open files)
+sudo apt install net-tools (give info of all network connections)
+sudo netstat -plan | grep nginx
+
+* to check logs
+tail -f /var/logs/nginx/*.logs
+
+
+
