@@ -6,7 +6,7 @@ for each namespace we have to set the resource quota limit. so namespace will us
 >>> for this ask for development team to give an idea how much RAM and CPU is needed.Do performance benchmarking with the team
 
 Resource quota is set on particular namespace : to prevent memory leak on whole cluster
-Resource limit is set on particular pod : to prevent memory leak on namespace
+Resource limit is set on particular pod : to prevent memory leak on namespace  
 if we do not set resouce limit one pod will get all the memory and cpu in the namespace and for other it is not available.
 2. -------OOM killed issues with pod : crashLoopBackOffError
 3.-------Upgrades : kubeadm or EKS
