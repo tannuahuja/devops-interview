@@ -15,6 +15,12 @@ we need to make sure our script runs only on bash
 #!/bin/bash
 tells whcih command processor handles the script
 
+passing paarmeters in variables :
+$0 : name of the script path is included
+$1: first parameter
+$10: 10th parameter
+$255: last parameter
+$? : last code executed
 
 
 
