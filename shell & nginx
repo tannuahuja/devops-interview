@@ -22,6 +22,66 @@ $10: 10th parameter
 $255: last parameter
 $? : last code executed
 
+branching and loops:
+if, else, elif, while, for, break and continue, 
+practice in vs code
+
+environment variables: path, terminal, editor, home, hostname, user, shell
+
+functions: 
+piping : using pipes | | |
+******----- challange: write 2 functions: getFiles, showFiles
+getfiles returns first 10 files of the directory
+showfiles takes array of files as parameter and display each one with parameter
+
+file operations: read file, write file, file checksums
+
+sleep and process:
+sleep command, watching a process
+watch a script
+
+how to get input from users
+
+how to handle bad data ?
+
+guessing game :
+#!/bin/bash
+
+# Target number
+TARGET=50
+
+# Function to get user input and provide feedback
+guess_number() {
+    while true; do
+        # Prompt the user for a guess
+        read -p "Guess a number: " guess
+        
+        # Check if the input is a number
+        if ! [[ $guess =~ ^[0-9]+$ ]]; then
+            echo "Please enter a valid number."
+            continue
+        fi
+
+        # Compare the user's guess to the target number
+        if [ "$guess" -eq "$TARGET" ]; then
+            echo "Congratulations! You guessed the number correctly!"
+            break
+        elif [ "$guess" -gt "$TARGET" ]; then
+            echo "Your guess is too high. Try again."
+        elif [ "$guess" -lt "$TARGET" ]; then
+            echo "Your guess is too low. Try again."
+        fi
+    done
+}
+
+# Start the game
+guess_number
+
+
+
+
+
+
 
 
 ====================================================================================================================================================================
