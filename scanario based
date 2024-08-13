@@ -234,7 +234,6 @@ Audit Logs: Maintain audit logs to track container communication and detect anom
 >>>>>>>.how to implement automated testing for dockerzise application how cicd used  here: configure piplien, build, run tests , push, deploy, run that build, monitoring and loging
 >>>>> 
 
-
 >>>>>>>>>*********-------- 
 >>>>>>>>>*********-------- 
 >>>>>>>>>*********-------- 
