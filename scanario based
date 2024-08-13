@@ -1,3 +1,4 @@
+
 >>>>>*****--------- reasons why pods are not able to create or the kind of production issues we faced
 1.--------Resource sharing : how to allocate resources btw multiple development teams
 u have multiple microservices deployed on same k8s cluster. For that create diff namespaces for each microservice.
