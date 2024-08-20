@@ -45,7 +45,7 @@ Discuss Kubernetes monitoring and logging strategies. How would you collect, ana
 You are tasked with designing a Kubernetes cluster architecture for a global, geo-distributed application deployment. Outline the considerations and Kubernetes features you would leverage to achieve high availability, performance, and data locality across multiple regions.
 
 
---------          Kubernetes Cost Reduction Techniques 👇
+!!!!!!!!!!!!!         ----          Kubernetes Cost Reduction Techniques 👇
 
 Each technique enables organizations to optimize Kubernetes usage and minimize expenses
 
