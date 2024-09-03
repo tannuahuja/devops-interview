@@ -11,7 +11,6 @@ Best for disaster recovery and data accessed less than once a quarter
 Archivevfe
 Best for long-term digital preservation of data accessed less than once a year
 
-
 #-----we have to create a 3 or 4-tier architecture what are the gcp services we have to use
 #-----cloud storage dfvg
 #----app engine vs compute engine
