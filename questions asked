@@ -1,4 +1,4 @@
-types of k8s probes
+types of k8s probes : readiness and liveness
 why in linux file is not created
 how to store secrets in k8s
 terraform workspace
