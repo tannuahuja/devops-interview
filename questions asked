@@ -28,7 +28,6 @@ deployment strategies and how to do in k8s : rolling update, recreate, blue-gree
 how to deploy static website using s3
 terraform state locking | state file
 
-
 how to perform rollout and rolling update 
 what is ingress and egress and why it is used
 kubernetes architecture
