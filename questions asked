@@ -5,7 +5,7 @@ terraform workspace
 how to create highly available architecture in k8s
 vpc peering
 load average in linux
-how to store sensitive file in terraform
+how to store sensitive file in terraform 
 how to override a variable file in terraform
 daemon set and stateful set
 aws networking  
